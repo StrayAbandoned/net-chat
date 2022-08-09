@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ru.gb.chat.client.RegController"
+      prefHeight="400.0" prefWidth="600.0">
+    <TextField fx:id="login" promptText="login" HBox.hgrow="ALWAYS">
+        <VBox.margin>
+            <Insets top="10.0" left="10.0" right="10.0"/>
+        </VBox.margin>
+    </TextField>
+    <TextField fx:id="nick" promptText="nick" HBox.hgrow="ALWAYS">
+        <VBox.margin>
+            <Insets top="10.0" left="10.0" right="10.0"/>
+        </VBox.margin>
+    </TextField>
+    <PasswordField fx:id="password" promptText="password" HBox.hgrow="ALWAYS">
+        <VBox.margin>
+            <Insets top="10.0" left="10.0" right="10.0"/>
+        </VBox.margin>
+    </PasswordField>
+    <PasswordField fx:id="passConfirm" promptText="confirm password" HBox.hgrow="ALWAYS">
+        <VBox.margin>
+            <Insets top="10.0" left="10.0" right="10.0"/>
+        </VBox.margin>
+    </PasswordField>
+    <Button fx:id="reg"  VBox.vgrow="ALWAYS" onAction="#registration" text="Registration">
+        <VBox.margin>
+            <Insets top="10.0" left="10.0" right="10.0"/>
+        </VBox.margin>
+    </Button>
+
+</VBox>
